@@ -1,5 +1,5 @@
 {% set name = "pydub" %}
-{% set version = "0.23.0" %}
+{% set version = "0.23.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 07d5eec305110cf1dfe1a0c45eed84bc31f889b1b19feab3859a05dc45b70e7b
+  sha256: c362fa02da1eebd1d08bd47aa9b0102582dff7ca2269dbe9e043d228a0c1ea93
 
 build:
   noarch: python
