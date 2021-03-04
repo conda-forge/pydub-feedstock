@@ -30,6 +30,7 @@ about:
   license: MIT
   license_family: MIT
   # License file not included in PyPI package
+  # https://github.com/jiaaro/pydub/issues/489
   # license_file: LICENSE
   summary: Manipulate audio with a simple and easy high level interface
   doc_url: http://pydub.com
@@ -38,3 +39,4 @@ about:
 extra:
   recipe-maintainers:
     - kynan
+    - owenlamont
