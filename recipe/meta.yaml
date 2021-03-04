@@ -1,5 +1,5 @@
 {% set name = "pydub" %}
-{% set version = "0.23.1" %}
+{% set version = "0.24.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c362fa02da1eebd1d08bd47aa9b0102582dff7ca2269dbe9e043d228a0c1ea93
+  sha256: ed3bbb49a1ca4858d4bd153b3c0e2f2ce523d2aa054b5f17c6f9df01ab6e5051
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license_family: MIT
   # License file not included in PyPI package
   # license_file: LICENSE
-  summary: 'Manipulate audio with a simple and easy high level interface'
+  summary: Manipulate audio with a simple and easy high level interface
   doc_url: http://pydub.com
   dev_url: https://github.com/jiaaro/pydub
 
