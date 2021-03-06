@@ -1,5 +1,5 @@
 {% set name = "pydub" %}
-{% set version = "0.24.0" %}
+{% set version = "0.25.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ed3bbb49a1ca4858d4bd153b3c0e2f2ce523d2aa054b5f17c6f9df01ab6e5051
+  sha256: c3fb5f3c60c4eb4af84666342507e8983f3a96b87b6ef90e13b996d4402942e2
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ test:
 about:
   home: http://pydub.com
   license: MIT
+  license_file: LICENSE
   license_family: MIT
   # License file not included in PyPI package
   # https://github.com/jiaaro/pydub/issues/489
